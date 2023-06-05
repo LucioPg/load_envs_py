@@ -13,7 +13,7 @@ number in the form of a string).
 
 ### Usage
 Install the package via git:
-> pip install git+https://www.github.com/LucioPg/load-envs-py.git
+> pip install git+https://github.com/LucioPg/load_envs_packaging.git
 
 Import in your script:
 > from load-envs-py.load_envs import load_envs
