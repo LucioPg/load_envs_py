@@ -16,7 +16,7 @@ Install the package via git:
 > pip install git+https://github.com/LucioPg/load_envs_py.git
 
 Import in your script:
-> from load-envs-py.load_envs import load_envs
+> from load_envs_py.load_envs import load_envs
 
 Create a list of variables names that you need:
 > envs_names = (
