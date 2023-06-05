@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/load-envs-py/__init__.py
+src/load-envs-py/load_envs.py
+src/load_envs_py.egg-info/PKG-INFO
+src/load_envs_py.egg-info/SOURCES.txt
+src/load_envs_py.egg-info/dependency_links.txt
+src/load_envs_py.egg-info/requires.txt
+src/load_envs_py.egg-info/top_level.txt

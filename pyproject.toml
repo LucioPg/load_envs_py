@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=65.5.1"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "load-envs-py"
+version = "1.0.0"
+authors = [
+  { name="LucioPg", email="LucioPg@gmail.com" },
+]
+description = "Load you .env vars in a python script by extending python-dotenv"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+  'python-dotenv == 1.0.0'
+]
+
+[project.urls]
+"Homepage" = "https://github.com/LucioPg/load-envs-py"
+"Bug Tracker" = "https://github.com/LucioPg/load-envs-py/issues"
