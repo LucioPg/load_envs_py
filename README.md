@@ -35,6 +35,9 @@ Create a list of variables names that you need:
     'SECURE_SSL_REDIRECT',
 )
 
+Use double quotes to separate the elements in a list:
+>MYLIST = ["http://localhost:800", "http://192.168.1.5"]
+
 Fire the load_env script and store the parsed result in a constant:
 > ENVS = load_envs(envs_names)
 
