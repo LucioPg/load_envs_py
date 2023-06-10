@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: load-envs-py
-Version: 1.0.0
+Version: 1.1.0
 Summary: Load you .env vars in a python script by extending python-dotenv
 Author-email: LucioPg <LucioPg@gmail.com>
 Project-URL: Homepage, https://github.com/LucioPg/load-envs-py
