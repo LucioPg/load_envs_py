@@ -30,7 +30,7 @@ Install the package via git:
 > pip install git+https://github.com/LucioPg/load_envs_py.git
 
 Import in your script:
-> from load-envs-py.load_envs import load_envs
+> from load_envs_py.load_envs import load_envs
 
 Create a list of variables names that you need:
 > envs_names = (
@@ -49,6 +49,9 @@ Create a list of variables names that you need:
     'SECURE_SSL_REDIRECT',
 )
 
+Use double quotes to separate the elements in a list:
+>MYLIST = ["http://localhost:8000", "http://192.168.1.5"]
+
 Fire the load_env script and store the parsed result in a constant:
 > ENVS = load_envs(envs_names)
 
@@ -59,7 +62,7 @@ Set the variable that you need as you would do by using the os.environ module:
 The script needs the list of string indicating the variable that need to be parsed as first argument.
 The other two args are optionals (but **recommend**):
 1. *env_path* sets the path of the .env file 
-2. *raise_no_exists* raise an exception if a name not represent any variable in the .env.
+2. *raise_no_exists* raise an exception if a name not represents any variable in the .env.
 
 ### Dependencies
 The script depends only on dotenv==1.0.0 package.
