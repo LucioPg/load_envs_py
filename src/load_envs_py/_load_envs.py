@@ -10,7 +10,9 @@ import json
 
 class Envs:
     """Simple class that parse .env files. The passed list of env names will be set as attrs with the related values.
-     If raise_no_exists is set it will raise an exception, otherwise the value will be skipped.
+    In this mode values can be accessed with dotted notation. It is possible to save the values in a dict by using
+    the as_dict method.
+    If raise_no_exists is set it will raise an exception, otherwise the value will be skipped.
     Please note that any value assigned as pure int or float will be parsed as number (you can not have a
     number as a string ).
     :param env_names: tuple of name of vars that should be set
@@ -21,11 +23,15 @@ class Envs:
         self.env_path = env_path
         self.env_names = env_names
         self.raise_no_exists = raise_no_exists
+        self._env_dict = {}
 
         self.load()
 
     def load(self):
         self._set_properties(self._load_envs())
+
+    def as_dict(self):
+        return self._load_envs()
 
     def _set_properties(self, props_dict):
         for attr, value in props_dict.items():
