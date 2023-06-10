@@ -1,4 +1,4 @@
-# Load Envs for Python
+# Load Envs for Python v.1.1.0
 
 ### Description
 
@@ -16,7 +16,7 @@ Install the package via git:
 > pip install git+https://github.com/LucioPg/load_envs_py.git
 
 Import in your script:
-> from load_envs_py.load_envs import load_envs
+> from load_envs_py import Envs
 
 Create a list of variables names that you need:
 > envs_names = (
@@ -38,11 +38,12 @@ Create a list of variables names that you need:
 Use double quotes to separate the elements in a list:
 >MYLIST = ["http://localhost:8000", "http://192.168.1.5"]
 
-Fire the load_env script and store the parsed result in a constant:
-> ENVS = load_envs(envs_names)
+Fire the load_env script and store the parsed result in a constant, specifying the .env path if it is necessary:
+>env_path = 'your_env_path'
+> ENVS = Envs(envs_names, env_path)
 
-Set the variable that you need as you would do by using the os.environ module:
->SECRET_KEY = ENVS['SECRET_KEY']
+get the variable that you need with the dotted notation:
+>SECRET_KEY = ENVS.SECRET_KEY
 
 ### Options
 The script needs the list of string indicating the variable that need to be parsed as first argument.
